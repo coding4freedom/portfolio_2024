@@ -1,0 +1,58 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*
+Nav Section
+*/
+#personal-logo {
+    width: 80px;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 120px;
+}
+
+.nav__link--list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__link {
+    margin: 0 1rem;
+}
+
+.nav__list--anchor {
+    text-decoration: none;
+    color: #242424;
+    font-weight: 700;
+    
+}
+
+.nav__img-icon {
+    width: 30px;
+    height: 30px;
+}
