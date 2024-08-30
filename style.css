@@ -18,6 +18,7 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 li {
@@ -30,6 +31,7 @@ p {
 
 section {
     background-color: rgb(245, 245, 245);
+    transition: all 300ms ease;
 }
 
 button {
@@ -151,6 +153,32 @@ nav,
     transition: all 400ms;
 }
 
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .nav__list--anchor,
+.dark-theme .header__para {
+    color: #fff;
+}
+
+.dark-theme section {
+    background-color: #242424;
+}
+
+.dark-theme .scroll__icon, 
+.dark-theme .scroll__icon:after {
+    border-color: #fff;    
+}
+.dark-theme .scroll__icon:after,
+.dark-theme .link__hover-effect--black:after {
+    background-color: #fff;
+}
+
+.dark-theme .mail__btn {
+    background-color: #fff;
+    color: #242424;    
+}
+
 /*
 Landing page Section
 */
@@ -171,6 +199,7 @@ Landing page Section
 }
 
 .title__secondary {
+    font-size: 7.5rem;
     color: var(--secondary-color);
 }
 
@@ -212,6 +241,7 @@ Landing page Section
     position: absolute;
     bottom: 32px;
     right: 40px;
+    z-index: 8;
 }
 
 .scroll {
@@ -556,6 +586,7 @@ Project Section
 */
 
 footer {
+    position: relative;
     background-color: #242424;
     display: flex;
 }
@@ -590,4 +621,115 @@ footer {
 .footer__social--link,
 .footer__copyright {
     color: #fff;
+}
+
+/*
+    Shapes
+*/
+
+.shape {
+    position: fixed;
+}
+
+.shape__0 {
+    top: 15vh;
+    left: 5vw;
+}
+.shape__1 {
+    top: 15vh;
+    left: 50vw;
+}
+.shape__2 {
+    top: 15vh;
+    left: 80vw;
+}
+.shape__3 {
+    top: 50vh;
+    left: 5vw;
+}
+.shape__4 {
+    top: 50vh;
+    left: 50vw;
+}
+.shape__5 {
+    top: 50vh;
+    left: 80vw;
+}
+.shape__6 {
+    top: 80vh;
+    left: 5vw;
+}
+.shape__7 {
+    top: 80vh;
+    left: 50vw;
+}
+.shape__8 {
+    top: 80vh;
+    left: 80vw;
+}
+
+/*
+    Media queries
+*/
+
+@media (max-width: 768px) {
+    .title,
+    .title__secondary {
+        font-size: 80px;
+    }
+    .header__para {
+        font-size: 20px;
+    }
+    .modal {
+        top: 0;
+        left: 0;
+        transform: none;
+        height: auto;
+        width: 100%;
+        border-radius: 0;
+        flex-direction: column-reverse;
+    }
+    .modal__half {
+        width: 100%;
+    }
+    .project__img {
+        height: 350px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .title,
+    .title__secondary {
+        font-size: 52px;
+    }
+    .header__para {
+        font-size: 18px;
+    }
+    .nav__link:first-child {
+        display: none;
+    }
+    #personal-logo,
+    .footer__img {
+        width: 60px;
+        height: 60px;
+    }
+    .project__descrip--para {
+        display: none;
+    }
+    .project__descrip {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .project__img {
+        height: 250px;
+    }
+    .project__descrip--sub-title {
+        margin-bottom: 8px;
+    }
+    .modal__half {
+        padding: 40px;
+    }
 }

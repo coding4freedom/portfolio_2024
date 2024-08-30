@@ -18,7 +18,7 @@
     </script>
 </head>
 <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
                 <img id="personal-logo" src="./assets/my_logo.png" alt="">
@@ -32,7 +32,7 @@
                     ">About</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#" class="
+                    <a href="#projects" class="
                         nav__list--anchor
                         link__hover-effect
                         link__hover-effect--black
@@ -45,19 +45,21 @@
                         link__hover-effect--black
                     ">Contact</a>
                 </li>
-                <li class="nav__link click">
+                <li class="nav__link click" onclick="toggleDarkMode()">
                     <a href="#" class="
                         nav__list--anchor
                         link__hover-effect
                         link__hover-effect--black
-                    "><img src="./assets/dark_mode_icon.png" alt="" class="nav__img-icon"></a>
+                    ">
+                    <img src="./assets/dark_mode_icon.png" alt="" class="nav__img-icon">
+                    </a>
                 </li>
             </ul>
         </nav>
         <header class="header">
             <div class="header__content">
                 <h1 class="title">Hey</h1>
-                <h1 class="title title__secondary">I'm Chris</h1>  
+                <h1 class="title__secondary">I'm Chris.</h1>  
                 <p class="header__para">
                     I'm a <span class="second__color">Frontend Software Engineer</span> driven to developing web applications, while crafting good user experiences. 
                     <br>
@@ -139,6 +141,15 @@
                 </div>
             </div>            
         </div>
+        <img src="./assets/semi circle.svg" class="shape shape__0">
+        <img src="./assets/circle.svg" class="shape shape__1">
+        <img src="./assets/squiggly.svg" class="shape shape__2">
+        <img src="./assets/circle.svg" class="shape shape__3">
+        <img src="./assets/triangle.svg" class="shape shape__4">
+        <img src="./assets/circle.svg" class="shape shape__5">
+        <img src="./assets/squiggly.svg" class="shape shape__6">
+        <img src="./assets/circle.svg" class="shape shape__7">
+        <img src="./assets/semi circle.svg" class="shape shape__8">
     </section>
     <section id="projects">
         <div class="container">
@@ -183,28 +194,30 @@
                     <img src="./assets/my_logo.png" alt="" class="footer__img">
                 </figure>
                 <div class="footer__social--list">
-                    <a href="" class="
+                    <a href="https://github.com/coding4freedom" target="_blank"
+                        class="
                         footer__social--link
                         link__hover-effect
                         link__hover-effect--white
                         ">
                         GitHub
                     </a>
-                    <a href="" class="
+                    <a href="https://www.linkedin.com/in/christopher-hawkins-250a0979/"         target="_blank" 
+                        class="
                         footer__social--link
                         link__hover-effect
                         link__hover-effect--white
                         ">
                         LinkedIn
                     </a>
-                    <a href="" class="
+                    <a href="#" onclick="toggleModal()" class="
                         footer__social--link
                         link__hover-effect
                         link__hover-effect--white
                         ">
                         Contact
                     </a>
-                    <a href="" class="
+                    <a href="#" target="_blank" class="
                         footer__social--link
                         link__hover-effect
                         link__hover-effect--white
