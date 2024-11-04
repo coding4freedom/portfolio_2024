@@ -574,11 +574,18 @@ Project Section
     margin-right: 1rem;
 }
 
+.project__list {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    gap: 3rem;
+}
+
 .project__descrip--para {
     margin: 1rem 0;
 }
 
-/* 1:15:37*/
+
 
 
 /*
